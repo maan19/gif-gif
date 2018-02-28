@@ -1,0 +1,15 @@
+.auth{
+    display:inline;
+    float:right;
+    margin-top: 15px;
+}
+
+.auth button{
+    color:white;
+    font-size: 15px;
+    background-color: black;
+    border:0 black solid;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 5px;
+    padding-bottom: 5px;
+}

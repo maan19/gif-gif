@@ -1,0 +1,25 @@
+.nav{
+   list-style-type:none;
+   padding:0;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-size:20px;
+   font-weight: 200px;
+}
+.nav li{
+    display:inline;
+   padding-right: 30px;
+}
+
+.container{
+    display:inline-block;
+}
+
+.active{
+    font-weight:bolder;
+    color: red;
+}
