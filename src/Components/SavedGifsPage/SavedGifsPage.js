@@ -14,7 +14,8 @@ class SavedGifsPage extends Component {
     render() {
         return (
             <div className={container}>
-            {this.props.error && <p>Ooops! there was some error in loading gifs!</p>} 
+            {this.props.isFetching && <p>Loading...</p>}
+            {this.props.error && <p>Ooops! there was some error in loading gifs!</p>}
             {this.props.available && <GifList gifs={this.props.favouriteGifs} gifModalHandler={this.props.gifModalHandler} />}
             <GifModal 
             selectedGif ={this.props.selectedGif} 

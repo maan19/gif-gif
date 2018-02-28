@@ -26,7 +26,7 @@ export const setGifs = (gifs) => ({
 export const fetchGifsThunk = (search) => {
     return (dispatch) => {
         dispatch(startFetchingGifs());
-        fetch(`http://api.giphy.com/v1/gifs/search?q=${search}&api_key=q3agVDAfwPaTIedaeadURP3qO4PdCWER&limit=25`)
+        fetch(`https://api.giphy.com/v1/gifs/search?q=${search}&api_key=q3agVDAfwPaTIedaeadURP3qO4PdCWER&limit=25`)
         .then((list) => {
             dispatch(fetchGifsSuccess());
             return list.json();

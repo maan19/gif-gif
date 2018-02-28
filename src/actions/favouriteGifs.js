@@ -21,6 +21,7 @@
 
  export const setFavouriteGifsThunk = (uid) => {
     return (dispatch) => {
+       dispatch(startFetchingFavouriteGifs());
        database.ref(`users/${uid}/likedGifs`).once('value').then((snapshot) => {
            console.log(snapshot.val());
            var obj = snapshot.val();

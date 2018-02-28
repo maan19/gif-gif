@@ -5,14 +5,16 @@
 
 .link {
     text-decoration: none;
-    color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    font-size:20px;
    font-weight: 200px;
+   color: black;
 }
 .nav li{
     display:inline;
    padding-right: 30px;
+  
+   
 }
 
 .container{
@@ -21,5 +23,11 @@
 
 .active{
     font-weight:bolder;
+    font-size:40px;
+}
+
+.selected{
+    font-weight:bolder;
     color: red;
+    font-size:40px;
 }

@@ -23,7 +23,8 @@ const favouriteGifsReducer = (state=defaultState,action) =>{
         case "FETCH_FAVOURITE_GIFS_ERROR":
             return {
                 ...state,
-                error:true
+                error:true,
+                isFetching:false
             }
         case 'SAVE_FAVOURITE_GIF':
             return {
