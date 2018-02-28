@@ -13,7 +13,7 @@ const  gifModal = (props) => {
          {props.isSaving && <p>Saving...</p>}
          {props.success && <p>Saved!</p>}
          {props.error && <p>Error!</p>}
-         {props.location !== '/savedgifs' && props.uid && <button onClick={onFavClick} className={savebutton}>Add</button>}
+         {props.location !== '/savedgifs' && props.uid && <button onClick={onFavClick} className={savebutton}>Add to Favourites</button>}
         </Modal>
 
     );
